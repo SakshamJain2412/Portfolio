@@ -526,3 +526,71 @@ footer span {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* Resume */
+.resume-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resume-desc {
+    color: rgba(255,255,255,0.5);
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.resume-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.resume-embed {
+    border: 1px solid rgba(124,115,230,0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(124,115,230,0.15);
+}
+
+.resume-header {
+    background: rgba(124,115,230,0.1);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(124,115,230,0.2);
+}
+
+.resume-header span {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+}
+
+.resume-header span i {
+    color: #f72585;
+    margin-right: 8px;
+}
+
+.resume-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.resume-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+}
+
+.resume-dots span:nth-child(1) { background: #f72585; }
+.resume-dots span:nth-child(2) { background: #7c73e6; }
+.resume-dots span:nth-child(3) { background: #4cc9f0; }
+
+iframe {
+    display: block;
+    border: none;
+    background: white;
+}
