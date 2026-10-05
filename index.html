@@ -1,280 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saksham Jain | Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saksham Jain — BE-CSE student, full-stack developer and AI/ML enthusiast.">
+  <title>Saksham Jain | Developer Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#home" aria-label="Saksham Jain">SJ</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="mailto:jsaksham745@gmail.com">Let's talk <i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">SJ</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
+  <main>
     <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="avatar">SJ</div>
-            <h1>Saksham Jain</h1>
-            <p class="tagline">Full-stack developer building React/Node apps and applied ML/NLP systems</p>
-            <p class="subtitle">Final Year BE-CSE Student @ Chandigarh University</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="https://github.com/SakshamJain2412" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/saksham-jain-122187292" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><span class="status-dot"></span> Available for opportunities</div>
+          <p class="hero-kicker">BE-CSE · CHANDIGARH UNIVERSITY · 2023–2027</p>
+          <h1>Saksham<br><span>Jain.</span></h1>
+          <p class="hero-lead">I build <strong>useful software</strong> at the intersection of full-stack development and AI.</p>
+          <p class="hero-desc">Final-year Computer Science student with hands-on experience in web development, machine learning and NLP — focused on turning ideas into practical products.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore my work <i class="fas fa-arrow-right"></i></a>
+            <a class="btn btn-ghost" href="Saksham_Jain_Resume.pdf" download>Download resume <i class="fas fa-download"></i></a>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/SakshamJain2412" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/saksham-jain-122187292" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:jsaksham745@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
+
+        <div class="hero-side reveal reveal-delay">
+          <div class="profile-card">
+            <div class="card-top"><span>SAKSHAM.JAIN</span><span class="card-live"><i class="fas fa-circle"></i> ONLINE</span></div>
+            <div class="profile-mark">SJ</div>
+            <h2>Developer<br><span>+ AI Builder</span></h2>
+            <div class="mini-stats">
+              <div><strong>6+</strong><span>Projects</span></div>
+              <div><strong>2</strong><span>Internships</span></div>
+              <div><strong>1</strong><span>Patent</span></div>
+            </div>
+            <div class="tech-line"><span>Python</span><span>JavaScript</span><span>React</span><span>ML</span></div>
+          </div>
+      </div>
+      <a class="hero-scroll" href="#about"><span>Scroll to explore</span><i class="fas fa-arrow-down"></i></a>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a final year Computer Science student at Chandigarh University with a passion for building real-world web applications and AI-powered systems. I have hands-on experience in full stack web development, machine learning, and NLP.</p>
-                <p>With 2 internships, 6+ technical projects, and 80+ completed courses, I'm constantly learning and building. My goal is to become a full stack developer and create products that make a real difference.</p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>6+</h3>
-                        <p>Projects</p>
-                    </div>
-                    <div class="stat">
-                        <h3>2</h3>
-                        <p>Internships</p>
-                    </div>
-                    <div class="stat">
-                        <h3>80+</h3>
-                        <p>Courses</p>
-                    </div>
-                    <div class="stat">
-                        <h3>1</h3>
-                        <p>Patent</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section about" id="about">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><span class="section-number">01</span><div><p class="eyebrow">A little about me</p><h2>Building, learning,<br><span>and shipping.</span></h2></div></div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead-copy">I'm a final-year Computer Science student at Chandigarh University who enjoys building real-world web applications and AI-powered systems.</p>
+            <p>I have hands-on experience across full-stack development, machine learning and NLP. I learn by building — from dashboards and APIs to computer-vision and intelligent attendance systems.</p>
+            <p>My goal is simple: become a strong full-stack developer and create products that are genuinely useful.</p>
+          </div>
+          <div class="stats-grid reveal reveal-delay">
+            <div class="stat-card"><strong>6<span>+</span></strong><small>Technical projects</small></div>
+            <div class="stat-card"><strong>2</strong><small>Internships</small></div>
+            <div class="stat-card"><strong>80<span>+</span></strong><small>Courses completed</small></div>
+            <div class="stat-card accent"><strong>1</strong><small>Patent pending</small></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section dark" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-java"></i>
-                <p>Java</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-react"></i>
-                <p>React (Learning)</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-node-js"></i>
-                <p>Node.js (Learning)</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-github"></i>
-                <p>Git & GitHub</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-brain"></i>
-                <p>Machine Learning</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-comment-dots"></i>
-                <p>NLP</p>
-            </div>
+    <section class="section experience-section" id="experience">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><span class="section-number">02</span><div><p class="eyebrow">Where I've worked</p><h2>Experience that<br><span>taught me to build.</span></h2></div></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta"><span>JAN 2025 — APR 2025</span><span>PROJECT INTERN</span></div><div class="timeline-content"><h3>Dive Money</h3><p>Managed project timelines, collaborated with cross-functional teams and improved overall delivery efficiency.</p><span class="experience-tag">Project Management</span></div></article>
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-meta"><span>JUN 2024 — JUL 2024</span><span>AIML TRAINEE</span></div><div class="timeline-content"><h3>AcmeGrade</h3><p>Implemented machine-learning models using Python for real-world classification tasks and streamlined project workflows.</p><span class="experience-tag">Python · Machine Learning</span></div></article>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
+    <section class="section skills-section" id="skills">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><span class="section-number">03</span><div><p class="eyebrow">What I work with</p><h2>Tools I use to<br><span>turn ideas into code.</span></h2></div></div>
+        <div class="skill-groups">
+          <div class="skill-group reveal"><div class="skill-group-head"><i class="fas fa-layer-group"></i><h3>Frontend</h3></div><div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React <em>learning</em></span></div></div>
+          <div class="skill-group reveal"><div class="skill-group-head"><i class="fas fa-server"></i><h3>Backend</h3></div><div class="skill-list"><span>Python</span><span>Flask</span><span>Java</span><span>C++</span><span>Node.js <em>learning</em></span></div></div>
+          <div class="skill-group reveal"><div class="skill-group-head"><i class="fas fa-database"></i><h3>Data & AI</h3></div><div class="skill-list"><span>Machine Learning</span><span>NLP</span><span>OpenCV</span><span>MySQL</span><span>MongoDB <em>learning</em></span></div></div>
+          <div class="skill-group reveal"><div class="skill-group-head"><i class="fas fa-wrench"></i><h3>Tools & Domains</h3></div><div class="skill-list"><span>Git</span><span>GitHub</span><span>VS Code</span><span>NumPy</span><span>Pandas</span><span>IoT</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-wrap">
+        <div class="projects-heading reveal"><div><span class="section-number">04</span><p class="eyebrow">Selected work</p><h2>Things I've<br><span>built.</span></h2></div><p>Projects where I learned by solving a real problem, not just following a tutorial.</p></div>
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
-                <h3>School Management Dashboard</h3>
-                <p>Interactive dashboard with student management, attendance tracking, AI attendance scanner and results management.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <a href="https://github.com/SakshamJain2412/school-dashboard" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-robot"></i></div>
-                <h3>NLP Chatbot</h3>
-                <p>AI-powered chatbot using Python, NLTK, TF-IDF and SVM for intent classification with Flask web interface.</p>
-                <div class="project-tags">
-                    <span>Python</span><span>NLP</span><span>Flask</span><span>SVM</span>
-                </div>
-                <a href="https://github.com/SakshamJain2412/nlp-chatbot" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
-                <h3>Weather App</h3>
-                <p>Real-time weather application with 7-day forecast using OpenWeatherMap API.</p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
-                </div>
-                <a href="https://github.com/SakshamJain2412/weather-app" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-hand"></i></div>
-                <h3>PC Control via Hand Gesture</h3>
-                <p>Computer vision system to control PC using real-time hand gesture recognition via webcam.</p>
-                <div class="project-tags">
-                    <span>Python</span><span>OpenCV</span><span>MediaPipe</span>
-                </div>
-                <a href="https://github.com/SakshamJain2412" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-brain"></i></div>
-                <h3>AI Smart Attendance System</h3>
-                <p>Patent-pending AI attendance system using face and voice fusion with environment-adaptive authentication.</p>
-                <div class="project-tags">
-                    <span>Python</span><span>OpenCV</span><span>Deep Learning</span>
-                </div>
-                <a href="https://github.com/SakshamJain2412" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-            </div>
+          <article class="project-card featured reveal"><div class="project-visual visual-attendance"><div class="visual-icon"><i class="fas fa-fingerprint"></i></div><span>AI / CV</span></div><div class="project-body"><div class="project-top"><span class="project-index">01</span><span class="project-type">Patent pending</span></div><h3>AI Smart Attendance System</h3><p>Face + voice fusion attendance with environment-adaptive authentication and anti-spoofing.</p><div class="tags"><span>Python</span><span>OpenCV</span><span>Deep Learning</span></div><a href="https://github.com/SakshamJain2412" target="_blank" rel="noopener">View project <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-dashboard"><div class="dashboard-bars"><i></i><i></i><i></i><i></i></div><span>WEB APP</span></div><div class="project-body"><div class="project-top"><span class="project-index">02</span><span class="project-type">Dashboard</span></div><h3>School Management Dashboard</h3><p>Student management, live search, attendance tracking, AI scanner and results management.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://github.com/SakshamJain2412/school-dashboard" target="_blank" rel="noopener">View project <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-chatbot"><div class="chat-bubbles"><b></b><b></b><b></b></div><span>NLP</span></div><div class="project-body"><div class="project-top"><span class="project-index">03</span><span class="project-type">AI app</span></div><h3>NLP Chatbot</h3><p>Intent-classification chatbot using NLTK, TF-IDF and SVM with a Flask web interface.</p><div class="tags"><span>Python</span><span>NLP</span><span>Flask</span><span>SVM</span></div><a href="https://github.com/SakshamJain2412/nlp-chatbot" target="_blank" rel="noopener">View project <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-weather"><div class="weather-sun"><i class="fas fa-cloud-sun"></i></div><span>API</span></div><div class="project-body"><div class="project-top"><span class="project-index">04</span><span class="project-type">Web app</span></div><h3>Weather App</h3><p>Real-time weather application with a 7-day forecast using live OpenWeatherMap data.</p><div class="tags"><span>JavaScript</span><span>API</span><span>CSS</span></div><a href="https://github.com/SakshamJain2412/weather-app" target="_blank" rel="noopener">View project <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-vision"><div class="hand-icon"><i class="fas fa-hand"></i></div><span>COMPUTER VISION</span></div><div class="project-body"><div class="project-top"><span class="project-index">05</span><span class="project-type">Automation</span></div><h3>PC Control via Hand Gesture</h3><p>Real-time webcam-based hand gesture recognition for controlling a PC.</p><div class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></div><a href="https://github.com/SakshamJain2412" target="_blank" rel="noopener">View project <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-classification"><div class="class-icon"><i class="fas fa-images"></i></div><span>DEEP LEARNING</span></div><div class="project-body"><div class="project-top"><span class="project-index">06</span><span class="project-type">CNN</span></div><h3>Image Classification</h3><p>Deep-learning model built with TensorFlow and CIFAR-10 to classify images into 10 categories.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>CNN</span></div><a href="https://github.com/SakshamJain2412" target="_blank" rel="noopener">View project <i class="fas fa-arrow-up-right-from-square"></i></a></div></article>
         </div>
-    </section>
-    <!-- Certifications Section -->
-<section class="section" id="certifications">
-    <h2 class="section-title">Certifications</h2>
-    <div class="cert-grid">
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fab fa-python"></i></div>
-            <h3>Advanced Python & Python OOP</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-database"></i></div>
-            <h3>Introduction to Relational Databases & NoSQL</h3>
-            <p>IBM / Coursera</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-robot"></i></div>
-            <h3>Machine Learning Foundations & AI Foundations</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-chart-column"></i></div>
-            <h3>Complete Guide to AI & Data Science for SQL</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-calculator"></i></div>
-            <h3>NumPy, Pandas & Data Visualization</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-bolt"></i></div>
-            <h3>IoT Foundations & Arduino</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-arrows-rotate"></i></div>
-            <h3>Agile Foundations & Design Thinking</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Fundamentals of R Programming & Statistical Analysis</h3>
-            <p>Infosys</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-brain"></i></div>
-            <h3>AIML Course</h3>
-            <p>PreGrad</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-palette"></i></div>
-            <h3>Generative AI for Designers</h3>
-            <p>Coursera</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-cloud"></i></div>
-            <h3>Learning Cloud Computing: Core Concepts</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-        <div class="cert-card">
-            <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Statistics Foundations 1, 2 & 3</h3>
-            <p>LinkedIn Learning</p>
-        </div>
-    </div>
-</section>
-   <!-- Resume Section -->
-<section class="section dark" id="resume">
-    <h2 class="section-title">Resume</h2>
-    <div class="resume-content">
-        <p class="resume-desc">Here's a quick look at my resume. Download it or view it below!</p>
-        <div class="resume-buttons">
-            <a href="Saksham_Jain_Resume.pdf" download class="btn btn-primary">
-                <i class="fas fa-download"></i> Download PDF
-            </a>
-            <a href="Saksham_Jain_Resume.pdf" target="_blank" class="btn btn-secondary">
-                <i class="fas fa-external-link-alt"></i> Open in New Tab
-            </a>
-        </div>
-        <div class="resume-embed">
-            <div class="resume-header">
-                <span><i class="fas fa-file-pdf"></i> Saksham_Jain_Resume.pdf</span>
-                <div class="resume-dots">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-            <iframe src="Saksham_Jain_Resume.pdf" width="100%" height="650px"></iframe>
-        </div>
-    </div>
-</section>
-    <!-- Contact Section -->
-    <section class="section dark" id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <p>I'm currently looking for opportunities. If you have a project, a job offer, or just want to say hi, my inbox is open.</p>
-            <div class="contact-links">
-                <a href="mailto:jsaksham745@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> jsaksham745@gmail.com</a>
-                <a href="https://linkedin.com/in/saksham-jain-122187292" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/SakshamJain2412" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Designed & Built by <span>Saksham Jain</span></p>
-        <p class="footer-links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms & Conditions</a></p>
-    </footer>
+    <section class="section certifications-section" id="certifications">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><span class="section-number">05</span><div><p class="eyebrow">Learning never stops</p><h2>Courses &<br><span>certifications.</span></h2></div></div>
+        <div class="cert-grid">
+          <div class="cert-item reveal"><i class="fab fa-python"></i><div><strong>Advanced Python & Python OOP</strong><small>LinkedIn Learning</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-database"></i><div><strong>Relational Databases & NoSQL</strong><small>IBM / Coursera</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-robot"></i><div><strong>Machine Learning & AI Foundations</strong><small>LinkedIn Learning</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-chart-column"></i><div><strong>AI & Data Science for SQL</strong><small>LinkedIn Learning</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-table"></i><div><strong>NumPy, Pandas & Data Visualization</strong><small>LinkedIn Learning</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-arrows-rotate"></i><div><strong>Agile Foundations & Design Thinking</strong><small>LinkedIn Learning</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-chart-line"></i><div><strong>R Programming & Statistical Analysis</strong><small>Infosys</small></div></div>
+          <div class="cert-item reveal"><i class="fas fa-brain"></i><div><strong>AIML Course</strong><small>PreGrad</small></div></div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section resume-section" id="resume">
+      <div class="section-wrap resume-wrap">
+        <div class="resume-copy reveal"><span class="section-number">06</span><p class="eyebrow">Want the full picture?</p><h2>My resume,<br><span>one click away.</span></h2><p>Education, experience, skills and projects — all in one place.</p><div class="hero-actions"><a class="btn btn-primary" href="Saksham_Jain_Resume.pdf" download>Download PDF <i class="fas fa-download"></i></a><a class="btn btn-ghost" href="Saksham_Jain_Resume.pdf" target="_blank" rel="noopener">Open resume <i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+        <div class="resume-preview reveal reveal-delay"><div class="preview-top"><span><i class="fas fa-file-pdf"></i> Saksham_Jain_Resume.pdf</span><span>PDF</span></div><iframe src="Saksham_Jain_Resume.pdf" title="Saksham Jain resume"></iframe></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-glow"></div>
+      <div class="contact-inner reveal"><span class="section-number">07</span><p class="eyebrow">Let's build something</p><h2>Have an idea?<br><span>Let's talk.</span></h2><p>I'm currently looking for opportunities, projects and people who enjoy building useful things.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:jsaksham745@gmail.com">Get in touch <i class="fas fa-paper-plane"></i></a><a class="btn btn-ghost" href="https://linkedin.com/in/saksham-jain-122187292" target="_blank" rel="noopener">LinkedIn <i class="fab fa-linkedin-in"></i></a></div><div class="contact-email">jsaksham745@gmail.com</div></div>
+    </section>
+  </main>
+
+  <footer><div><strong>SJ</strong><span>Designed & built by Saksham Jain.</span></div><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/SakshamJain2412" target="_blank" rel="noopener">GitHub</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
